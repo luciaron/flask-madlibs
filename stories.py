@@ -29,8 +29,8 @@ class Story:
 
         text = self.template
 
-        for (key, val) in answers.items():
-            text = text.replace("{" + key + "}", val)
+        for (prompt, answer) in answers.items():
+            text = text.replace("{" + prompt + "}", answer)
 
         return text
 
@@ -40,6 +40,13 @@ class Story:
 
 story = Story(
     ["place", "noun", "verb", "adjective", "plural_noun"],
-    """Once upon a time in a long-ago {place}, there lived a
-       large {adjective} {noun}. It loved to {verb} {plural_noun}."""
+    """Once upon a time in a long-ago {place}, there lived a large {adjective} {noun}. It loved to {verb} {plural_noun}."""
 )
+
+answers = {
+    'place': 'Xanadu',
+    'noun': 'donkey',
+    'verb': 'kick',
+    'adjective': 'Pythonic',
+    'plural_noun': 'sour patch kids'
+    }
