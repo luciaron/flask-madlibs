@@ -1,0 +1,9 @@
+input {
+  display : inline-block;
+  background-color: antiquewhite;
+  margin: 10px
+}
+
+button {
+  margin: 10px
+}

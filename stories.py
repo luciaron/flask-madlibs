@@ -40,9 +40,10 @@ class Story:
 
 story = Story(
     ["place", "noun", "verb", "adjective", "plural_noun"],
-    """Once upon a time in a long-ago {place}, there lived a large {adjective} {noun}. It loved to {verb} {plural_noun}."""
+    """Once upon a time in a/an {place} long ago, there lived a large {adjective} {noun}. It loved to {verb} {plural_noun}."""
 )
 
+# sample answers to practice working with Story in terminal
 answers = {
     'place': 'Xanadu',
     'noun': 'donkey',
